@@ -26,7 +26,7 @@ class Army:
         
             
     def advance(self, soldier):
-        # function that excludes the soldier from the circular list (i.e. kill it)
+        # function that excludes (kill) the soldier from the circular list
         soldier.prev.next = soldier.next
         soldier.next.prev = soldier.prev
     
